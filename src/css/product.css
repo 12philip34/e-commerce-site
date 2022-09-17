@@ -1,0 +1,126 @@
+
+.Loading {
+    margin-top: 30px;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  
+  .buttonsprod {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+    justify-content: center;
+    align-items: center;
+  }
+/*   
+  .buttonsprod .btn{
+    background: #0a1853;
+    padding: 5px 10px;
+    border: none;
+    color: whitesmoke;
+    transition: 1s;
+  }
+
+  .buttonsprod .btn:hover{
+    background: #040d2e; 
+  } */
+
+  .productbtn {
+    margin: 5px 10px;
+    background-color: #fff;
+    color: #0a1853;
+    border: 1px solid #0a1853;
+    font-weight: bold;
+    font-family: serif;
+    text-transform: capitalize;
+    transition: all 1s;
+  }
+  
+  .productbtn:hover {
+    background-color: #0a1853;
+    color: #fff;
+  }
+  
+  .CardProdrow {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .CardProdrow .cardCont .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* width: 300px; */
+    height: auto;
+    border: none;
+    margin: 30px;
+  }
+  
+  .CardProdrow .cardCont .card .card-header{
+    width: 100%;
+    height: 500px;
+  }
+
+    
+  .CardProdrow .cardCont .card .cardContent{
+    background: #0a1853;
+    width: 100%;
+  }
+
+  .CardProdrow .cardCont .card .card-body img{
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+  }
+  /* .cardCont .card:hover .card-body img{
+   transform: scale(1.1);
+  } */
+  
+
+  .cardCont .card .card-body{
+    width: 100%;
+    height: 250px;
+  }
+  
+  .CardProdrow .cardCont .card .cardContent .card-body .title{
+    color: rgba(175, 168, 168, 0.521);
+  }
+  .CardProdrow .cardCont .card .cardContent .card-body .other span{
+    padding-top: 20px;
+    color: whitesmoke;
+  }
+  
+  .CardProdrow .cardCont .card .cardContent .card-footer{
+      border-top: 1px solid lightgray;
+    background: #040d2e;
+  }
+   
+  .CardProdrow .cardCont .card .cardContent .card-footer a{
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .hover {
+    --b: 0.1em;   /* the thickness of the line */
+    --c: #040d2e; /* the color */
+    
+    color: #0000;
+    font-weight: bold;
+    padding-block: var(--b);
+    background: 
+      linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+      linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+  }
+  .hover:hover {
+    --_p: 100%;
+    --_s: .3s;
+    background: #040d2e;
+    color: white;
+  }
