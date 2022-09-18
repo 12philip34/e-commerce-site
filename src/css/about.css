@@ -1,0 +1,45 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    justify-content: center;
+    align-items: center;
+    background: #0a1853;
+}
+
+.cols{
+    background: #fff;
+    margin: 30px;
+    padding: 30px;
+}
+
+.about .grid .cols h3{
+    text-align: center;
+    color: #0a1853;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about .grid .cols p{
+    text-align: center;
+    color: #0a1853;
+    font-size: 1.2rem;
+}
+
+.about .grid img{
+    width: 100%;
+    height: 400px;
+}
+
+@media only screen and (max-width: 768px) {
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .grid, .whiteBg{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(1000px, 1fr));
+    }
+}

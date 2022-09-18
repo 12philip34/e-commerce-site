@@ -1,5 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
+import "../../node_modules/font-awesome/css/font-awesome.css"
 import { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom';
 import "../css/product.css";
@@ -63,7 +64,7 @@ const Product = () => {
                         <h5 className='pordtDis'>PRODUCT DESCRIPTION</h5>
                         <p className='textdesp'>{product.description}</p>
                         <div class="d-grid gap-2">
-                            <button class="btn" onClick={() => addProduct(product)}>ADD TO CART</button>
+                            <button class="btn fa-solid fa-cart-shopping" onClick={() => addProduct(product)}>ADD TO CART</button>
                             <NavLink to="/cart" class="btnCart" id='NavLink' type="button">View Cart</NavLink>
                         </div>
                     </div>

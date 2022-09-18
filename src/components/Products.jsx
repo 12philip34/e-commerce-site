@@ -9,7 +9,6 @@ const Products = () => {
     const [data, setData] = useState([]);
     const [filter, setFilter] = useState(data);
     const [loading, setLoading] = useState(false);
-    console.log(filter);
 
     let componentMounted = true;
 
@@ -34,7 +33,8 @@ const Products = () => {
     const Loading = () => {
         return (
             <>
-                <p className="Loading">loading...</p>
+                <h2 id='load'>Loading...</h2>
+                <i class="fa-solid fa-spinner"></i>
             </>
         )
     }
@@ -49,11 +49,11 @@ const Products = () => {
         return (
             <>
                 <div className="buttonsprod">
-                    <button className="btn me-2 hover" onClick={() => setFilter(data)}>Shop All</button>
-                    <button className="btn me-2 hover" onClick={() => filterProduct("men's clothing")}>Men's Clothing</button>
-                    <button className="btn me-2 hover" onClick={() => filterProduct("women's clothing")}>Women's Clothing</button>
-                    <button className="btn me-2 hover" onClick={() => filterProduct("jewelery")}>Jewelery</button>
-                    <button className="btn me-2 hover" onClick={() => filterProduct("electronics")}>Electronic</button>
+                    <button className="btn hover" onClick={() => setFilter(data)}>Shop All</button>
+                    <button className="btn hover" onClick={() => filterProduct("men's clothing")}>Men's Clothes</button>
+                    <button className="btn hover" onClick={() => filterProduct("women's clothing")}>Women's Clothes</button>
+                    <button className="btn hover" onClick={() => filterProduct("jewelery")}>Jewelery</button>
+                    <button className="btn hover" onClick={() => filterProduct("electronics")}>Electronic</button>
                 </div>
                 <div className="products">
                     <div className="CardProdrow">
@@ -68,7 +68,7 @@ const Products = () => {
                                             <div className="cardContent">
                                                 <div className="card-body">
                                                     <label>
-                                                        <p className="title">{product.title}</p>
+                                                        <h5 className="title">{product.title}</h5>
                                                         <div className="other">
                                                             <span>{product.rating.rate}</span>
                                                             <span>{product.price}</span>
@@ -76,7 +76,7 @@ const Products = () => {
                                                     </label>
                                                 </div>
                                                 <div className="card-footer">
-                                                <Link to={`/products/${product.id}`} id='aLink' class="btn btn-dark">ADD ITEM</Link>
+                                                    <Link to={`/products/${product.id}`} id='aLink' class="btn btn-dark">ADD ITEM</Link>
                                                 </div>
                                             </div>
                                         </div>

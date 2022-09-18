@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import Empty from ".././image/empty-cart.png";
 import "../css/cart.css";
 import "../css/product.css";
 import { AddCart } from '../redux/action';
@@ -33,8 +34,8 @@ const Cart = () => {
                              <p className="textdesp"> 
                              {cartItem.qty} x ${cartItem.price} = ${cartItem.qty * cartItem.price}</p>
                              <div className="buttoncalc">
-                             <button id='button' className="btn btn-outline-dark me-4" onClick={()=> delProduct(cartItem)}><i className="fa fa-minus"></i></button>
-                             <button id='button' className="btn btn-outline-dark me-4" onClick={()=> addProduct(cartItem)}><i className="fa fa-plus"></i></button>
+                             <button id='button' className="btn btn-outline-dark me-4" onClick={()=> delProduct(cartItem)}><i className="fa fa-plus"></i></button>
+                             <button id='button' className="btn btn-outline-dark me-4" onClick={()=> addProduct(cartItem)}><i className="fa fa-minus"></i></button>
                              </div>
                          </div>
                      </div>
@@ -50,7 +51,8 @@ const Cart = () => {
                      <div className="px-4 my-5 bg-light rounded-3 py-5">
                          <div className="container py-4">
                              <div className="row justify-content-center">
-                                 <h3 className="text-center">Your Cart is Empty</h3>
+                                <img id='emptyImage' src={Empty} alt="empty.png" />
+                                 <h3 className="text-center emptyCart">Cart Empty</h3>
                              </div>
                          </div> 
                      </div>
@@ -61,7 +63,7 @@ const Cart = () => {
                  return(
                      <div className="container">
                          <div className="row">
-                             <NavLink to="/checkout" className="btn btn-dark mb-5 w-25 mx-auto">Proceed To Checkout</NavLink>
+                             <NavLink to="/checkout" className="checkproceed">Proceed To Checkout</NavLink>
                          </div>
                      </div>
                  )
@@ -72,8 +74,9 @@ const Cart = () => {
         <div className="cart">
             <div className="container">
                 <div className="row">
-                 
+            {state.length === 0 && emptyCart()}
             {state.length !== 0 && state.map(cartItems)}
+            {state.length !== 0 && button()}
                 </div>
             </div>
         </div>

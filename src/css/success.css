@@ -1,0 +1,19 @@
+.backhome{
+    color: white;
+    background: #0a1853;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.successtext{
+    padding: 20px;
+    text-align: center;
+}
+
+.successtext p{
+    color: #0a1853;
+}
+
+#successImage{
+    width: 100%;
+}

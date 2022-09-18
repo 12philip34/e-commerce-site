@@ -1,0 +1,24 @@
+.paymentDetails{
+    color: #0a1853;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+label{
+    color: #0a1853;
+    font-weight: 500;
+}
+
+.navlink{
+    margin: 30px;
+}
+
+.Continuecheckout{
+    background: #0a1853;
+    color: white;
+}
+
+.backShopping:hover{
+    background: #0a1853;
+    color: white;
+}

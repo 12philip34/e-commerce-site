@@ -9,6 +9,23 @@
     padding: 20px;
 }
 
+.emptyCart{
+    color: rgba(211, 211, 211, 0.644);
+    padding: 10px;
+}
+
+#emptyImage{
+    width: 15%;
+}
+
+.checkproceed{
+    color: whitesmoke;
+    background: #0a1853;
+    border: none;
+    padding: 5px 10px;border-radius: 10px;
+    text-decoration: none;
+}
+
 @media only screen and (max-width:768px) {
     .buttoncalc{
         display: flex;

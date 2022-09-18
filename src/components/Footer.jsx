@@ -6,6 +6,7 @@ import Twitter from "../image/twitter.png"
 import Linkedin from "../image/linkedin.png"
 import Github from "../image/github.png"
 import Instagram from "../image/instagram.png"
+import logo from "../image/LOGO.png"
 import {
   MDBFooter,
   MDBContainer,
@@ -19,8 +20,8 @@ const Footer = () => {
   return (
     <MDBFooter className='text-center' color='white' id='Footer'>
       <MDBContainer className='p-4'>
+         <label id='labelImage'> <img src={logo} alt="la boutique.png" /></label>
         <section className='mb-4'>
-          <h3 id='logoFooter'> La Boutique</h3>
          <img id='iconsFooter' src={Facebook} alt="" />
          <img id='iconsFooter' src={Twitter} alt="" />
          <img id='iconsFooter' src={Linkedin} alt="" />
@@ -52,117 +53,89 @@ const Footer = () => {
 
         <section className='mb-4'>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum repellat quaerat
-            voluptatibus placeat nam, commodi optio pariatur est quia magnam eum harum corrupti dicta, aliquam
-            sequi voluptate quas.
+          Millions of brands of all sizes trust Square to accept payments,
+           build customer relationships, and grow their business in-store and online.
           </p>
         </section>
 
         <section className=''>
           <MDBRow>
-            <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-              <h5 className='text-uppercase'>Links</h5>
+            <MDBCol lg='4' md='6' className='mb-4 mb-md-0'>
+              <h5 className='text-uppercase'>Branches..</h5>
 
               <ul className='list-unstyled mb-0'>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 1
+                    Nigeria(Ng)
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 2
+                   Soyth Africa(Sf)
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 3
+                  USA(Ua)
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 4
+                   China(Ca)
                   </a>
                 </li>
               </ul>
             </MDBCol>
 
             <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-              <h5 className='text-uppercase'>Links</h5>
+              <h5 className='text-uppercase'>Telephone</h5>
 
               <ul className='list-unstyled mb-0'>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 1
+                   (+234)9032127081
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 2
+                   (+234)8057111353
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 3
+                   (+111)128-000-234
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 4
+                    (+111)234-167-097
                   </a>
                 </li>
               </ul>
             </MDBCol>
 
             <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-              <h5 className='text-uppercase'>Links</h5>
+              <h5 className='text-uppercase'>Home Town branches..</h5>
 
               <ul className='list-unstyled mb-0'>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 1
+                    16 uqua Road, Akwa Ibom.
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 2
+                    James Town,Lekki, Lagos.
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 3
+                   Leba Street, Abuja
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                    Link 4
-                  </a>
-                </li>
-              </ul>
-            </MDBCol>
-
-            <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
-              <h5 className='text-uppercase'>Links</h5>
-
-              <ul className='list-unstyled mb-0'>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 1
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 2
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 3
-                  </a>
-                </li>
-                <li>
-                  <a href='#!' className='text-white'>
-                    Link 4
+                    Youth shelter, Uyo
                   </a>
                 </li>
               </ul>
@@ -174,7 +147,7 @@ const Footer = () => {
       <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
         © 2020 Copyright:
         <a className='text-white' href='https://mdbootstrap.com/'>
-          MDBootstrap.com
+          E.Zommer.Zulu.com
         </a>
       </div>
     </MDBFooter>

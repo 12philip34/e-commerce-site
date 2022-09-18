@@ -3,6 +3,7 @@ import "../App.css";
 import { useState } from "react"
 import { NavLink } from "react-router-dom";
 import { useSelector } from 'react-redux';
+import logo from "../image/LOGO.png"
 
 
 const Navbar = () => {
@@ -14,7 +15,7 @@ const Navbar = () => {
         <div className='Navbar'>
             <nav className="navigation">
                 <NavLink to="/" className="brand-name">
-                    La Boutique
+                    <img src={logo} alt="la boutique.png" />
                 </NavLink>
                 <button
                     className="hamburger"
@@ -54,8 +55,8 @@ const Navbar = () => {
                             <NavLink to="/contact">Contact</NavLink>
                         </li>
                     <div className="button">
-                            <NavLink to="/login" className="text"><i className="fa fa-sign-in"></i>Login</NavLink>
-                            <NavLink to="/register" className="text"><i className="fa fa-user-plus"></i>Register</NavLink>
+                            {/* <NavLink to="/login" className="text"><i className="fa fa-sign-in"></i>Login</NavLink>
+                            <NavLink to="/register" className="text"><i className="fa fa-user-plus"></i>Register</NavLink> */}
                             <NavLink to="/cart" className="text"><i className="fa fa-cart-plus"></i>Cart({state.length})</NavLink>
                         </div>
                     </ul>
