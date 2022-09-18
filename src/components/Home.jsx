@@ -1,9 +1,6 @@
 import React from 'react'
-// import Background from "../image/second.jpg"
 import "../App.css";
-import One from "../image/caro1.jpg";
-import Two from "../image/caro2.jpg";
-import Three from "../image/caro3.jpg";
+import Products from './Products';
 
 const Home = () => {
     return (
@@ -14,7 +11,7 @@ const Home = () => {
                     <h3>Get ready to grab!!!</h3>
                 </div>
             </div>
-           
+            <Products />
         </div>
     )
 }

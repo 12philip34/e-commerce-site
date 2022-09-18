@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
-import "../css/product.css";
+import "../css/products.css";
+import "../App.css";
 
 
 const Products = () => {
@@ -54,7 +55,7 @@ const Products = () => {
                     <button className="btn me-2 hover" onClick={() => filterProduct("jewelery")}>Jewelery</button>
                     <button className="btn me-2 hover" onClick={() => filterProduct("electronics")}>Electronic</button>
                 </div>
-                <div className="">
+                <div className="products">
                     <div className="CardProdrow">
                         {
                             filter.map((product) => {
@@ -67,7 +68,7 @@ const Products = () => {
                                             <div className="cardContent">
                                                 <div className="card-body">
                                                     <label>
-                                                        <h4 className="title">{product.title}</h4>
+                                                        <p className="title">{product.title}</p>
                                                         <div className="other">
                                                             <span>{product.rating.rate}</span>
                                                             <span>{product.price}</span>
@@ -75,8 +76,7 @@ const Products = () => {
                                                     </label>
                                                 </div>
                                                 <div className="card-footer">
-                                                {/* <Link class="btn btn-dark">ADD ITEM</Link> */}
-                                                <a href="#">Add Item</a>
+                                                <Link to={`/products/${product.id}`} id='aLink' class="btn btn-dark">ADD ITEM</Link>
                                                 </div>
                                             </div>
                                         </div>

@@ -1,15 +1,21 @@
 import React from 'react'
 import "../App.css";
 import { useState } from "react"
+import { NavLink } from "react-router-dom";
+import { useSelector } from 'react-redux';
+
 
 const Navbar = () => {
-    const [isNavExpanded, setIsNavExpanded] = useState(false)
+    const [isNavExpanded, setIsNavExpanded] = useState(false);
+    const state = useSelector((state)=> state.HandleCart)
+    
+
     return (
         <div className='Navbar'>
             <nav className="navigation">
-                <a href="/" className="brand-name">
-                    La Qlothque
-                </a>
+                <NavLink to="/" className="brand-name">
+                    La Boutique
+                </NavLink>
                 <button
                     className="hamburger"
                     onClick={() => {
@@ -36,18 +42,21 @@ const Navbar = () => {
                 >
                     <ul>
                         <li>
-                            <a href="/home">Home</a>
+                            <NavLink to="/">Home</NavLink>
                         </li>
                         <li>
-                            <a href="/about">About</a>
+                            <NavLink to="/products">Products</NavLink>
                         </li>
                         <li>
-                            <a href="/contact">Contact</a>
+                            <NavLink to="/about">About</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/contact">Contact</NavLink>
                         </li>
                     <div className="button">
-                            <a href="#" className="text"><i className="fa fa-sign-in"></i>Login</a>
-                            <a href="#" className="text"><i className="fa fa-user-plus"></i>Register</a>
-                            <a href="#" className="text"><i className="fa fa-cart-plus"></i>Cart(0)</a>
+                            <NavLink to="/login" className="text"><i className="fa fa-sign-in"></i>Login</NavLink>
+                            <NavLink to="/register" className="text"><i className="fa fa-user-plus"></i>Register</NavLink>
+                            <NavLink to="/cart" className="text"><i className="fa fa-cart-plus"></i>Cart({state.length})</NavLink>
                         </div>
                     </ul>
                 </div>

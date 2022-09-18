@@ -1,3 +1,7 @@
+*{
+  text-align: center;
+  /* overflow-x: hidden; */
+}
 .App {
   text-align: center;
 }
@@ -103,6 +107,7 @@
   font-weight: bold;
   margin: 0 10px;
   border-radius: 10px;
+  text-decoration: none;
 }
 
 .text:hover {
@@ -155,6 +160,33 @@
   box-shadow: 2px 2pxgray;
 }
 
+#Footer{
+  background: #0a1853;
+}
+
+#iconsFooter{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 30px;
+}
+
+#logoFooter{
+  text-transform: uppercase;
+  font-family: serif;
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(133, 129, 129, 0.534);
+}
+
+
+#seeMore{
+  /* position: fixed; */
+  left: 50px;
+  top: 200px;
+  background: #0a1853;
+  color: white;
+}
 
 
 
