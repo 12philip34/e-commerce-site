@@ -5,7 +5,7 @@ import Facebook from "../image/facebook.png"
 import Twitter from "../image/twitter.png"
 import Linkedin from "../image/linkedin.png"
 import Github from "../image/github.png"
-import Instagram from "../image/instagram.png"
+// import Instagram from "../image/instagram.png"
 import logo from "../image/LOGO.png"
 import {
   MDBFooter,
@@ -15,18 +15,17 @@ import {
   MDBRow,
   MDBBtn
 } from 'mdb-react-ui-kit';
-
 const Footer = () => {
   return (
     <MDBFooter className='text-center' color='white' id='Footer'>
       <MDBContainer className='p-4'>
-         <label id='labelImage'> <img src={logo} alt="la boutique.png" /></label>
+        <label id='labelImage'> <img src={logo} alt="la boutique.png" /></label>
         <section className='mb-4'>
-         <img id='iconsFooter' src={Facebook} alt="" />
-         <img id='iconsFooter' src={Twitter} alt="" />
-         <img id='iconsFooter' src={Linkedin} alt="" />
-         <img id='iconsFooter' src={Github} alt="" />
-         <img id='iconsFooter' src={Instagram} alt="" />
+          <a rel='noopener noreferrer' href="https://www.facebook.com/Nssienphilip/" target="_blank"> <img id='iconsFooter' src={Facebook} alt="facebook.com" /></a>
+          <a rel='noopener noreferrer' href="https://twitter.com/Nssienphilip" target="_blank"><img id='iconsFooter' src={Twitter} alt="twitter.com" /></a>
+          <a rel='noopener noreferrer' href="https://www.linkedin.com/in/philip-nssien/" target="_blank"> <img id='iconsFooter' src={Linkedin} alt="Linkedin.com" /></a>
+          <a rel='noopener noreferrer' href="https://github.com/12philip34" target="_blank"><img id='iconsFooter' src={Github} alt="Github.com" /></a>
+          {/* <a href="" target="_blank"><img id='iconsFooter' src={Instagram} alt="Instagram.com" /></a> */}
         </section>
 
         <section className=''>
@@ -53,8 +52,8 @@ const Footer = () => {
 
         <section className='mb-4'>
           <p>
-          Millions of brands of all sizes trust Square to accept payments,
-           build customer relationships, and grow their business in-store and online.
+            Millions of brands of all sizes trust Square to accept payments,
+            build customer relationships, and grow their business in-store and online.
           </p>
         </section>
 
@@ -71,17 +70,17 @@ const Footer = () => {
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                   Soyth Africa(Sf)
+                    Soyth Africa(Sf)
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                  USA(Ua)
+                    USA(Ua)
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                   China(Ca)
+                    China(Ca)
                   </a>
                 </li>
               </ul>
@@ -93,17 +92,17 @@ const Footer = () => {
               <ul className='list-unstyled mb-0'>
                 <li>
                   <a href='#!' className='text-white'>
-                   (+234)9032127081
+                    (+234)9032127081
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                   (+234)8057111353
+                    (+234)8057111353
                   </a>
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                   (+111)128-000-234
+                    (+111)128-000-234
                   </a>
                 </li>
                 <li>
@@ -130,7 +129,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a href='#!' className='text-white'>
-                   Leba Street, Abuja
+                    Leba Street, Abuja
                   </a>
                 </li>
                 <li>
